@@ -1,27 +1,36 @@
-import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
-import ProfilAlfikri from './pages/profilAlfikri.jsx'
+import { Routes, Route, Link } from "react-router-dom";
+
+import LandingPage from "./pages/landing-page";
+import ProfilAlfikri from "./pages/ProfilAlfikri";
+import ProfilAlza from "./pages/ProfilAlza";
+import ProfilRyan from "./pages/ProfilRyan";
 
 function App() {
   return (
-    <div className="min-h-screen">
-      {/* Navbar */}
-      <nav className="bg-purple-600 text-white p-4">
-        <div className="max-w-5xl mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold">Portofolio Alfikri</h1>
-          <Link
-            to="/alfikri-sanaqri"
-            className="bg-white text-purple-600 px-4 py-2 rounded hover:bg-gray-100 transition"
-          >
-            Lihat Profil
-          </Link>
-        </div>
-      </nav>
+    <div>
+          <nav className="p-4 bg-gray-800 text-white flex gap-4">
+            <Link to="/" className="hover:text-yellow-400 transition">
+              Home
+            </Link>
 
-      {/* Routes */}
+            <Link to="/alfikri" className="hover:text-yellow-400 transition">
+              Alfikri
+            </Link>
+
+            <Link to="/alza" className="hover:text-yellow-400 transition">
+              Alza Boss
+            </Link>
+
+            <Link to="/ryan" className="hover:text-yellow-400 transition">
+              Mister Rayen
+            </Link>
+          </nav>
+
       <Routes>
-        <Route path="/" element={<ProfilAlfikri />} />
-        <Route path="/alfikri-sanaqri" element={<ProfilAlfikri />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/alfikri" element={<ProfilAlfikri />} />
+        <Route path="/alza" element={<ProfilAlza />} />
+        <Route path="/ryan" element={<ProfilRyan />} />
       </Routes>
     </div>
   );
