@@ -4,20 +4,9 @@ import FotoAlfikri from "../assets/foto-alfikri.jpg";
 function ProfilAlfikri() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-100 to-blue-100">
-
-      <div className="fixed top-0 left-0 w-full bg-gray-900 text-white flex gap-6 px-6 py-3 z-50 shadow-lg">
-        <a href="/" className="hover:text-yellow-300 transition">Home</a>
-        <a href="/alfikri" className="hover:text-yellow-300 transition">Alfikri</a>
-        <a href="/alza" className="hover:text-yellow-300 transition">Alza Boss</a>
-        <a href="/ryan" className="hover:text-yellow-300 transition"> Mister Ryan</a>
-      </div>
-
       <div className="pt-20 p-6">
-
         <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
-
           <div className="relative bg-purple-600 h-40">
-
             <div className="absolute -bottom-16 left-8 flex items-center gap-6">
 
               <img
@@ -77,7 +66,7 @@ function ProfilAlfikri() {
           </div>
         </div>
 
-      </div>
+      </div> 
     </div>
   );
 }

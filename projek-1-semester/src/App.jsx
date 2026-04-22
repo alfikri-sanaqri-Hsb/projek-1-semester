@@ -4,6 +4,7 @@ import LandingPage from "./pages/landing-page";
 import ProfilAlfikri from "./pages/ProfilAlfikri";
 import ProfilAlza from "./pages/ProfilAlza";
 import ProfilRyan from "./pages/ProfilRyan";
+import LatihanUseEffect from "./pages/latihan-useEffect";
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
             <Link to="/ryan" className="hover:text-yellow-400 transition">
               Mister Rayen
             </Link>
+
+            <Link to="/latihan-useEffect" className="hover:text-yellow-400 transition">
+              latihan useEffect
+            </Link>
           </nav>
 
       <Routes>
@@ -31,6 +36,7 @@ function App() {
         <Route path="/alfikri" element={<ProfilAlfikri />} />
         <Route path="/alza" element={<ProfilAlza />} />
         <Route path="/ryan" element={<ProfilRyan />} />
+        <Route path="/latihan-useEffect" element={<LatihanUseEffect />} />
       </Routes>
     </div>
   );

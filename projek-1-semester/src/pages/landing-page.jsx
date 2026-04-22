@@ -32,6 +32,12 @@ function LandingPage() {
             >
                 Mister Rayen
             </Link>
+            <Link
+                to="/latihan-useEffect"
+                className="px-4 py-2 bg-gray-200 text-black rounded-md shadow hover:bg-purple-500 hover:text-white transition"
+            >
+                Latihan useEffect
+            </Link>
             </div>
     </div>
   );
